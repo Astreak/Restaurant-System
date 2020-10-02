@@ -1,0 +1,10 @@
+{% extends "Order/layout.html" %}{% block content %} {% for i in object_list %}
+
+<ul class="lol" style="color:azure; font-size:60px;text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    {% ifequal i.account user %}
+    <li style="color:green">{{i.account.username}}</li>
+    {% else %}
+    <li> {{i.account.username}}</li>
+    {% endifequal %}
+</ul>
+{% endfor %} {% endblock %}

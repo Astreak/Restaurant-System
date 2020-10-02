@@ -1,0 +1,12 @@
+{% extends "Order/layout.html" %}{% block content %} {% for i in object_list %}
+<ul style="color:red; font-size:50px;text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    {% ifequal i.bonus 0 %}
+    <li>{{i.buyer}} has an order of {{i.Choice}}
+        <a type="submit" class="btn btn-primary" href='/delivered/{{i.id}}' "> Delivered</a>
+    </li>
+    {% else %}
+    <li>{{i.buyer}} has an order of {{i.Choice}} with BONUS <a type="submit " class="btn btn-primary " href='/delivered/{{i.id}}' "> Delivered</a>
+    </li>
+    {% endifequal %}
+</ul>
+{% endfor %} {% endblock %}

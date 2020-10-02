@@ -1,0 +1,9 @@
+{% extends "Order/layout.html" %}{% block content %} {% for i in object_list %}
+<ul style="color:red; font-size:60px;text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    {% ifequal i.bonus 0 %}
+    <li> <span style="color:green">{{i.Choice}}</span> to {{i.response}}</li>
+    {% else %}
+    <li><span style="color:green">{{i.Choice}}</span> to {{i.response}}</li>
+    {% endifequal %}
+</ul>
+{% endfor %} {% endblock %}

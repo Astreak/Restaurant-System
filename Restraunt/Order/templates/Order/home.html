@@ -3,4 +3,11 @@
 
 <h1>
     <center> Welcome To The Paradise</center>
+    <center>
+        <h2 style="color:aqua">Mr. {{user.username}},you have {{H}} orders to process {% ifequal H 0 %}
+            <h1> You have no orders active</h1>
+            {% else %}
+            <a href="/show">click here</a> {% endifequal %}
+        </h2>
+    </center>
 </h1>{% endblock %}
