@@ -5,7 +5,7 @@ Basically both users and the restaurant stuffs can use the app.Each stuff should
 
 ## Technologies and Languages
 ![alt-text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdVHp3tFa21ZVNvtfxgQaHKllXxCyS7GcMzQ&usqp=CAU)
-![alt-text](
+
 - ### Language
       - Python
 - ### Technologies
